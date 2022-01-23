@@ -4,6 +4,8 @@
   "description": "It is a secure digital waller server. Here you can send digital money from one to another. Every user has received a unique wallet address.",
   "main": "app.js",
   "scripts": {
+    "start": "NODE_ENV=development nodemon app.js",
+    "production": "NODE_ENV=production node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/xxxxxxRIFATxxxxxx/digital-wallet-server#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.1.7"
   }
 }
