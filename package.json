@@ -1,0 +1,22 @@
+{
+  "name": "digital-wallet-server",
+  "version": "1.0.0",
+  "description": "It is a secure digital waller server. Here you can send digital money from one to another. Every user has received a unique wallet address.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxxxxxRIFATxxxxxx/digital-wallet-server.git"
+  },
+  "author": "Md. Rifat Islam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxxxxxRIFATxxxxxx/digital-wallet-server/issues"
+  },
+  "homepage": "https://github.com/xxxxxxRIFATxxxxxx/digital-wallet-server#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
