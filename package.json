@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/xxxxxxRIFATxxxxxx/digital-wallet-server#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^14.2.0",
     "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
     "http-errors": "^2.0.0",
     "mongoose": "^6.1.7"
   }

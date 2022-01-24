@@ -1,5 +1,5 @@
 // Dependencies
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 // Schema
 const userSchema = new mongoose.Schema({
@@ -23,6 +23,10 @@ const userSchema = new mongoose.Schema({
         type: Buffer,
         required: true,
     },
+    walletAddress: {
+        type: String,
+        required: true
+    },
     role: {
         type: String,
         enum: ['user', 'admin'],
@@ -32,6 +36,7 @@ const userSchema = new mongoose.Schema({
     balance: {
         type: Number,
         required: true,
+        default: 500,
         trim: true
     },
     transaction: {
@@ -39,8 +44,10 @@ const userSchema = new mongoose.Schema({
             transactionID: { type: String, required: true, trim: true },
             amount: { type: Number, required: true, trim: true, default: 0 },
             sender: { type: String, required: true, trim: true },
+            receiver: { type: String, required: true, trim: true },
             date: { type: Date, default: Date.now() }
-        }]
+        }],
+        required: false
     }
 },
 
