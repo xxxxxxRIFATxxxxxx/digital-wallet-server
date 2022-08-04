@@ -25,7 +25,8 @@ const userSchema = new mongoose.Schema({
     },
     walletAddress: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
     role: {
         type: String,
@@ -43,8 +44,12 @@ const userSchema = new mongoose.Schema({
         type: [{
             transactionID: { type: String, required: true, trim: true },
             amount: { type: Number, required: true, trim: true, default: 0 },
-            sender: { type: String, required: true, trim: true },
-            receiver: { type: String, required: true, trim: true },
+            senderName: { type: String, required: true, trim: true },
+            senderEmail: { type: String, required: true, trim: true },
+            senderWalletAddress: { type: String, required: true, trim: true },
+            receiverName: { type: String, required: true, trim: true },
+            receiverEmail: { type: String, required: true, trim: true },
+            receiverWalletAddress: { type: String, required: true, trim: true },
             date: { type: Date, default: Date.now() }
         }],
         required: false
